@@ -15,9 +15,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-
-
-
 }
 
 
@@ -44,23 +41,6 @@
     opacity: 0.9;
 }
 
-/* #fondo {
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-
-
-} */
-
-/* #fondo img {
-    width: 100%;
-    border-radius: 20px;
-    
-    
-
-} */
 
 #informacion {
     display: flex;
@@ -157,7 +137,6 @@ input:focus {
 #confirmar {
 
     text-align: center;
-    /* background-color: blueviolet; */
     width: 60%;
     padding: 10px;
 }

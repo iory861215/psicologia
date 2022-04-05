@@ -7,7 +7,6 @@ const xhttp = new XMLHttpRequest();
 xhttp.onload = function () {
 
     $objeto = JSON.parse(this.responseText);
-    //console.log($objeto)
 
     $objeto.forEach(element => {
         let item = document.createElement('li');
@@ -31,8 +30,6 @@ xhttp.onload = function () {
 
 xhttp.open("GET", "./modulos/horarios.php");
 xhttp.send();
-
-
 
 
 let confirmar = document.getElementById('confirmar');
@@ -66,7 +63,6 @@ confirmar.addEventListener('click', function () {
         xhttp.onload = function () {
 
             $objeto = JSON.parse(this.responseText);
-            //console.log($objeto)
             lista.innerHTML = '';
 
             $objeto.forEach(element => {
