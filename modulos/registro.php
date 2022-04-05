@@ -22,7 +22,7 @@ if ($nombre == '' or $email == '' or $ads == '' or $hora == '') {
 
     echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);;padding:10px;border-radius:10px;">Cita agregada!!</p>';
 
-    //METER CODIGO PARA MADAR UN CORREO A LA PERSONA QUE HACE LA CITA OPCIONAL
+    //METER CODIGO PARA MADAR UN CORREO A LA PERSONA QUE HACE LA CITA OPCIONAL PENDIENTE
 
 } else {
     echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Ya hiciste una cita previamente!!</p>';
