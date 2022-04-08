@@ -15,14 +15,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+
+
 }
 
 
 #marco {
     background-color: rgba(12, 7, 7, 0.434);
     display: flex;
+    justify-content: center;
     width: 50%;
-    height: 90vh;
+    height: 80vh;
     border-radius: 20px;
     padding: 10px;
     border: 7px solid whitesmoke;
@@ -31,40 +34,29 @@
 
 /* PARA IMAGEN DE GIFT */
 #fondo {
-    width: 100%;
-    padding-right: 20px;
+    width: 50%;
     background-image: url(../img/cartel3.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    opacity: 0.9;
+    /* opacity: 0.5; */
 }
 
 
 #informacion {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    width: 100%;
 
 }
-
 
 #datos {
     display: flex;
-    justify-content: center;
-    width: 90%;
-
-}
-
-#datos #formulario {
-    display: flex;
     flex-direction: column;
-    width: 90%;
-
-
+    width: 70%;
 }
 
 label {
@@ -76,27 +68,27 @@ label:hover {
     color: black;
 }
 
-#formulario input,
+#datos input,
 label {
-    margin: 5px;
+    margin: 3px;
 }
 
-#formulario input {
-    padding: 8px;
+#datos input {
+    padding: 3px;
     border: none;
     border-radius: 5px;
     outline: none;
-    font-size: 16px;
-
 
 }
 
-input:focus {
-    background-color: #99ccc4;
+#datos select {
+    padding: 3px;
+    border-radius: 5px;
+    color: green;
 }
 
-#formulario h2 {
-    padding-bottom: 20px;
+#caja {
+    width: 70%;
 }
 
 
@@ -113,18 +105,16 @@ input:focus {
 }
 
 #caja ul li {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
     margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
+
 
 }
 
@@ -134,25 +124,34 @@ input:focus {
     font-weight: bold;
 }
 
+#respuesta {
+    margin-bottom: 5px;
+}
+
 #confirmar {
 
     text-align: center;
     width: 60%;
-    padding: 10px;
+    padding: 5px;
 }
 
 #confirmar input {
-    padding: 10px;
+    padding: 6px;
     border-radius: 10px;
     width: fit-content;
     border: 1px solid black;
     border: none;
+    color: green;
 
 }
 
 #confirmar input:hover {
-    background-color: #9ee8dc;
-    color: white;
+
+    color: green;
     font-size: 14px;
     letter-spacing: 1px;
+}
+
+div.ui-datepicker {
+    font-size: 15px;
 }

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>citas</title>
     <link rel="shortcut icon" href="img/cita.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="datapicker/jquery-ui-1.13.0.custom/jquery-ui.css">
+    <link rel="stylesheet" href="datapicker/jquery-ui-1.13.0.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="datapicker/jquery-ui-1.13.0.custom/jquery-ui.theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,15 +23,22 @@
             </div>
             <div id="informacion">
                 <div id="datos">
-                    <div id="formulario">
-
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre">
-                        <label for="email">Correo:</label>
-                        <input type="text" id="email">
-                        <label for="ads">Adscripción:</label>
-                        <input type="text" id="ads">
-                    </div>
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" id="nombre">
+                    <label for="ads">Adscripción:</label>
+                    <input type="text" id="ads">
+                    <label for="email">Correo:</label>
+                    <input type="text" id="email">
+                    <label for="tel">Celular:</label>
+                    <input type="text" id="tel">
+                    <label for="tel">Modalidad de cita:</label>
+                    <select name="opcion" id="opcion">
+                        <option value="presencial">Presencial</option>
+                        <option value="zoom">Zoom</option>
+                        <option value="telefono">Telefonica</option>
+                    </select>
+                    <label for="tel">Fecha:</label>
+                    <input type="text" id="datepicker" name="fecha" onchange="verHorario()">
                 </div>
                 <div id="caja">
                     <ul id="lista">
@@ -44,7 +54,8 @@
         </div>
     </div>
 
-
+    <script src="datapicker/jquery-ui-1.13.0.custom/external/jquery/jquery.js"></script>
+    <script src="datapicker/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
     <script src="js/app.js"></script>
 
 </body>
