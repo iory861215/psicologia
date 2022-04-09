@@ -1,3 +1,11 @@
+<?php
+include 'modulos/conexion.php';
+$ads = "SELECT DISTINCT ads FROM usuarios";
+$ejecutarads = $mysqli->query($ads);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,23 +22,26 @@
 </head>
 
 <body>
-
-
     <div id="principal">
         <div id="marco">
-            <div id="fondo">
-                <!-- <img src="img/cita.jpeg" alt=""> -->
-            </div>
+            <div id="fondo"></div>
             <div id="informacion">
                 <div id="datos">
                     <label for="nombre">Nombre y apellidos:</label>
                     <input type="text" id="nombre">
                     <label for="ads">Adscripción:</label>
-                    <input type="text" id="ads">
+                    <select name="ads" id="ads">
+
+                        <?php while ($fila = $ejecutarads->fetch_assoc()) { ?>
+                            <option value="<?php echo $fila['ads'] ?>"><?php echo $fila['ads'] ?></option>
+
+                        <?php }    ?>
+
+                    </select>
                     <label for="email">Correo:</label>
-                    <input type="text" id="email">
+                    <input type="email" id="email">
                     <label for="tel">Celular:</label>
-                    <input type="text" id="tel">
+                    <input type="number" id="tel">
                     <label for="tel">Modalidad de cita:</label>
                     <select name="opcion" id="opcion">
                         <option value="presencial">Presencial</option>

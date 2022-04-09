@@ -27,67 +27,96 @@ if ($nombre == '' or $email == '' or $ads == '' or $hora == '' or $tel == '') {
 
 //PARA HORARIOS EN LA TARDE
 elseif (mysqli_num_rows($ejecConsulta) == 0  and $fecha == '05-04-2022') {
-    $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
-    $ejecutar = $mysqli->query($insertar);
+    if ($opcion == 'zoom') {
 
-    $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
-    $ejecUpdate = $mysqli->query($update);
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
-    echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada!!</p>';
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
 
-    //METER CODIGO PARA MADAR UN CORREO A LA PERSONA QUE HACE LA CITA OPCIONAL PENDIENTE
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada y enlace!!</p>';
+    } else {
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
+
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;text-align:center;">Cita agregada!!<br>Acudir 5 minutos antes de su cita</p>';
+    }
 } elseif (mysqli_num_rows($ejecConsulta) == 0 and $fecha == '12-04-2022') {
-    $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
-    $ejecutar = $mysqli->query($insertar);
+    if ($opcion == 'zoom') {
 
-    $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
-    $ejecUpdate = $mysqli->query($update);
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
-    echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada!!</p>';
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
 
-    //METER CODIGO PARA MADAR UN CORREO A LA PERSONA QUE HACE LA CITA OPCIONAL PENDIENTE
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada y enlace!!</p>';
+    } else {
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
+
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;text-align:center;">Cita agregada!!<br>Acudir 5 minutos antes de su cita</p>';
+    }
 } elseif (mysqli_num_rows($ejecConsulta) == 0 and $fecha == '19-04-2022') {
-    $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
-    $ejecutar = $mysqli->query($insertar);
+    if ($opcion == 'zoom') {
 
-    $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
-    $ejecUpdate = $mysqli->query($update);
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
-    echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada!!</p>';
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
 
-    //METER CODIGO PARA MADAR UN CORREO A LA PERSONA QUE HACE LA CITA OPCIONAL PENDIENTE
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada y enlace!!</p>';
+    } else {
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
+
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;text-align:center;">Cita agregada!!<br>Acudir 5 minutos antes de su cita</p>';
+    }
 } elseif (mysqli_num_rows($ejecConsulta) == 0 and $fecha == '26-04-2022') {
-    $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
-    $ejecutar = $mysqli->query($insertar);
+    if ($opcion == 'zoom') {
 
-    $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
-    $ejecUpdate = $mysqli->query($update);
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
-    echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada!!</p>';
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
 
-    //METER CODIGO PARA MADAR UN CORREO A LA PERSONA QUE HACE LA CITA OPCIONAL PENDIENTE
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada y enlace!!</p>';
+    } else {
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
+        $update = "UPDATE tarde SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
+
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;text-align:center;">Cita agregada!!<br>Acudir 5 minutos antes de su cita</p>';
+    }
 } //PARA HORARIOS EN EL DIA
 elseif (mysqli_num_rows($ejecConsulta) == 0  and $fecha !== '05-04-2022'  or $fecha !== '12-04-2022'  or $fecha !== '19-04-2022'  or $fecha !== '26-04-2022') {
-    $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
-    $ejecutar = $mysqli->query($insertar);
+    if ($opcion == 'zoom') {
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
-    $update = "UPDATE dia SET status='ocupado' WHERE hora='$hora'";
-    $ejecUpdate = $mysqli->query($update);
-    echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada!!</p>';
-} 
-/* 
-else {
-    echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Ya hiciste una cita previamente!!</p>';
-} */
+        $update = "UPDATE dia SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;">Cita agregada y mandar enlace!!</p>';
+    } else {
+        $insertar = "INSERT INTO registro(nombre, ads, correo, tel, fecha, hora, modalidad) VALUES('$nombre', '$ads', '$email', '$tel', '$fecha', '$hora', '$opcion')";
+        $ejecutar = $mysqli->query($insertar);
 
-
-
-/* 
-echo $nombre;
-echo $email;
-echo $ads;
-echo $hora; */
+        $update = "UPDATE dia SET status='ocupado' WHERE hora='$hora'";
+        $ejecUpdate = $mysqli->query($update);
+        echo '<p style="color:white;background-color:rgba(12, 7, 7, 0.8);padding:10px;border-radius:10px;text-align:center;">Cita agregada!!<br>Acudir 5 minutos antes de su cita</p>';
+    }
+}

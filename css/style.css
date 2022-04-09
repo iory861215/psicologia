@@ -15,8 +15,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-
-
 }
 
 
@@ -114,8 +112,6 @@ label {
     margin: 0px;
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
-
-
 }
 
 #lista li:hover {
@@ -142,7 +138,6 @@ label {
     border: 1px solid black;
     border: none;
     color: green;
-
 }
 
 #confirmar input:hover {
@@ -154,4 +149,442 @@ label {
 
 div.ui-datepicker {
     font-size: 15px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+    #marco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #fondo {
+        display: none;
+
+    }
+
+
+    #informacion {
+        width: 80%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    #datos {
+        width: 95%;
+    }
+
+    #datos label,
+    input,
+    select {
+        font-size: 12px;
+        margin-top: 10px;
+
+    }
+
+    #caja {
+        width: 100%;
+    }
+
+    #caja ul li {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        margin: 3px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #lista li:hover {
+        background-color: #AEEAE0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    #respuesta {
+        margin-bottom: 0px;
+    }
+
+    #confirmar {
+
+        padding: 0px;
+    }
+
+    #confirmar input {
+        padding: 5px;
+        border-radius: 5px;
+        width: fit-content;
+        border: 1px solid black;
+        border: none;
+        color: green;
+    }
+
+    div.ui-datepicker {
+        font-size: 12px;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #marco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #fondo {
+        display: none;
+
+    }
+
+
+    #informacion {
+        width: 80%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    #datos {
+        width: 95%;
+    }
+
+    #datos label,
+    input,
+    select {
+        font-size: 14px;
+        margin-top: 10px;
+
+    }
+
+    #caja {
+        width: 100%;
+    }
+
+    #caja ul li {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        padding: 3px;
+        display: flex;
+
+        align-items: center;
+        margin: 3px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #lista li:hover {
+        background-color: #AEEAE0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    #respuesta {
+        margin-bottom: 0px;
+    }
+
+    #confirmar {
+
+        padding: 0px;
+    }
+
+    #confirmar input {
+        padding: 5px;
+        border-radius: 5px;
+        width: fit-content;
+        border: 1px solid black;
+        border: none;
+        color: green;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    #marco {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #fondo {
+        display: block;
+        width: 58%;
+        height: 100%;
+        background-image: url(../img/cartel3.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+
+    }
+
+
+    #informacion {
+        width: 42%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    #datos {
+        width: 95%;
+    }
+
+    #datos label,
+    input,
+    select {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    #datos label {
+        font-size: 14px;
+    }
+
+    #caja {
+        width: 100%;
+    }
+
+    #caja ul li {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        padding: 3px;
+        display: flex;
+
+        align-items: center;
+        margin: 3px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #lista li:hover {
+        background-color: #AEEAE0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    #respuesta {
+        margin-bottom: 0px;
+    }
+
+    #confirmar {
+
+        padding: 0px;
+    }
+
+    #confirmar input {
+        padding: 5px;
+        border-radius: 5px;
+        width: fit-content;
+        border: 1px solid black;
+        border: none;
+        color: green;
+    }
+
+    div.ui-datepicker {
+        font-size: 12px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #marco {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #fondo {
+        display: block;
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/cartel3.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+
+    #informacion {
+        width: 50%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    #datos {
+        width: 85%;
+    }
+
+    #datos label,
+    input,
+    select {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    #datos label {
+        font-size: 14px;
+    }
+
+    #caja {
+        width: 100%;
+    }
+
+    #caja ul li {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        padding: 3px;
+        display: flex;
+
+        align-items: center;
+        margin: 3px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #lista li:hover {
+        background-color: #AEEAE0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    #respuesta {
+        margin-bottom: 0px;
+    }
+
+    #confirmar {
+
+        padding: 0px;
+    }
+
+    #confirmar input {
+        padding: 5px;
+        border-radius: 5px;
+        width: fit-content;
+        border: 1px solid black;
+        border: none;
+        color: green;
+    }
+
+    div.ui-datepicker {
+        font-size: 15px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #marco {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #fondo {
+        display: block;
+        width: 50%;
+        background-image: url(../img/cartel3.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border: 5px solid black; */
+
+
+    }
+
+
+    #informacion {
+        width: 50%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    #datos {
+        width: 70%;
+    }
+
+    #datos label,
+    input,
+    select {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #datos label {
+        font-size: 16px;
+    }
+
+    #caja {
+        width: 100%;
+    }
+
+    #caja ul li {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #lista li:hover {
+        background-color: #AEEAE0;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #respuesta {
+        margin-bottom: 0px;
+    }
+
+    #confirmar {
+
+        padding: 0px;
+    }
+
+    #confirmar input {
+        padding: 5px;
+        border-radius: 5px;
+        width: fit-content;
+        border: 1px solid black;
+        border: none;
+        color: green;
+    }
+
+    div.ui-datepicker {
+        font-size: 18px;
+    }
 }
